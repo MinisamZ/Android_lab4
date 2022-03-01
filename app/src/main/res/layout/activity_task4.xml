@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".Task4">
     <TextView
-            android:text="Cколько четных цифр в введенном числе и сколько нечетных:"
+            android:text="Сколько четных цифр в введенном числе и сколько нечетных:"
             android:layout_width="282dp"
             android:layout_height="87dp" android:id="@+id/task4TextView"
             android:textSize="20sp" app:layout_constraintTop_toTopOf="parent"
