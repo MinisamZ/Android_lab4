@@ -1,6 +1,7 @@
 package com.example.android_lab4;
 
 import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,9 +29,17 @@ public class Task3 extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View view) {
-                int century = Integer.parseInt(editText.getText().toString());
-                textViewR.setText(Integer.toString(century));
-
+                if (editText.getText().toString().isEmpty()) {
+                    textViewR.setText("is empty");
+                    textViewR.setTextColor(Color.rgb(160, 0, 0));
+                    textViewR.setTextSize(25);
+                } else {
+                    int century = Integer.parseInt(editText.getText().toString());
+                    century = ((century - 1) / 100) + 1;
+                    textViewR.setText(Integer.toString(century));
+                    textViewR.setTextColor(Color.rgb(0, 160, 0));
+                    textViewR.setTextSize(25);
+                }
             }
 
         });

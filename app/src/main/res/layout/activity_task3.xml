@@ -26,7 +26,7 @@
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintVertical_bias="0.0" android:hint="Введите год" android:minHeight="48dp"/>
     <Button
-            android:text="Button"
+            android:text="Вычислить век"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/task3Button"
             android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="parent"
